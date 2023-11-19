@@ -21,7 +21,6 @@ public class Utils
 
     public static Vector3 MousePosition3D(int colliderLayer)
     {
-        Debug.Log(colliderLayer);
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out RaycastHit raycastHit, 999f))
         {
